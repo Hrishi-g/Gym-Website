@@ -1,0 +1,122 @@
+/* General Styling */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Calibri, Arial;
+    transition: all 0.3s ease-out;
+}
+#bmi_head {
+    display: flex;
+    justify-content: center;
+    font-size: 3em;
+    color: hsl(56, 99%, 82%);
+    font-family: "Lato", sans-serif;
+}
+body {
+    background-color: hsl(0, 0%, 22%);
+}
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: 2px solid hsl(56, 99%, 32%);
+    background: hsl(0, 0%, 15%);
+}
+/* Set Styles For reusable classes */
+.body {
+    padding: 0px 10px 0px 10px;
+}
+.container {
+    max-width: 500px;
+    margin: auto;
+    margin-top: 50px;
+}
+input[type="number"] {
+    color: aliceblue;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    width: 100%;
+    display: inline-block;
+    border: 2px solid hsl(56, 99%, 32%);
+    background: hsl(0, 0%, 15%);
+}
+#check {
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    width: 100%;
+    display: inline-block;
+    font-size: large;
+    background-color: hsl(56, 99%, 52%);
+}
+#check:hover {
+    background-color: hsl(56, 99%, 32%);
+}
+.button {
+    background-color: hsl(0, 0%, 22%);
+    text-align: center;
+    color: hsl(0, 0%, 22%);
+    width: 0px;
+    padding: 0;
+    margin: auto;
+    margin-bottom: 0px;
+    border-radius: 0px;
+}
+.aside {
+    position: fixed;
+    top: 0;
+    left: -500px;
+}
+.form {
+    margin-bottom: 50px;
+}
+/* Style the meter */
+#guage {
+    position: relative;
+    margin: auto;
+    margin-bottom: -150px;
+    border-radius: 100%;
+    width: 300px;
+    height: 300px;
+    max-width: 300px;
+    max-height: 300px;
+}
+#guage svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#guage .value {
+    font-size: 20px;
+    position: relative;
+    top: 100px;
+    text-align: center;
+}
+#spinner {
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    transition: transform 1.5s ease-in-out;
+    transform: rotate(45deg);
+}
+#pointer {
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-right: 12px solid red;
+    position: absolute;
+    z-index: 20;
+    top: 105px;
+    left: 5px;
+    width: 0px;
+}
+#guage .small-text {
+    font-size: 14px;
+    position: relative;
+    text-align: center;
+    top: 95px;
+}
